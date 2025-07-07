@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PWXXFR78");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NatureBloom Organics | Simple Checkout</title>
+    <meta
+      name="description"
+      content="Complete your NatureBloom Organics purchase securely. Review your organic skincare order and enter simple shipping details."
+    />
+    <meta
+      name="keywords"
+      content="organic skincare checkout, secure payment, natural beauty order, buy organic products, NatureBloom checkout"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Typically noindex, nofollow for checkout pages -->
+    <link
+      rel="canonical"
+      href="https://yourwebsite.com/naturebloom-checkout.html"
+    />
+
+    <!-- Open Graph / Social Media Tags -->
+    <meta
+      property="og:title"
+      content="NatureBloom Organics | Simple Checkout"
+    />
+    <meta
+      property="og:description"
+      content="Complete your NatureBloom Organics purchase securely. Review your organic skincare order and enter simple shipping details."
+    />
+    <meta
+      property="og:image"
+      content="https://placehold.co/1200x630/D1FAE5/065F46?text=Checkout"
+    />
+    <meta
+      property="og:url"
+      content="https://yourwebsite.com/naturebloom-checkout.html"
+    />
+    <meta property="og:type" content="product.retailer" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc; /* Lightest blue-gray for background */
+        color: #334155; /* Slate-700 for general text */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 1200px;
+      }
+      .btn-primary {
+        background-color: #10b981; /* Emerald-500 */
+        transition: all 0.3s ease;
+      }
+      .btn-primary:hover {
+        background-color: #059669; /* Emerald-600 */
+        box-shadow: 0 8px 16px rgba(16, 185, 129, 0.4);
+      }
+      .form-input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #cbd5e1; /* border-gray-300 */
+        border-radius: 0.5rem; /* rounded-lg */
+        font-size: 1rem;
+        color: #334155; /* text-gray-700 */
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .form-input:focus {
+        outline: none;
+        border-color: #10b981; /* Emerald-500 */
+        box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3); /* ring-emerald-500 */
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PWXXFR78"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="page-wrapper" class="flex flex-col flex-grow">
+      <!-- Header -->
+      <header id="main-header" class="bg-white shadow-sm py-4 px-6 md:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+          <a
+            href="naturebloom-home.html"
+            id="brand-logo"
+            class="text-3xl font-bold text-green-700"
+            >NatureBloom Organics</a
+          >
+          <nav id="main-nav">
+            <ul class="flex space-x-6 md:space-x-8">
+              <li>
+                <a
+                  href="naturebloom-home.html"
+                  id="nav-home"
+                  class="text-gray-700 hover:text-green-600 font-medium"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="naturebloom-products.html"
+                  id="nav-products"
+                  class="text-gray-700 hover:text-green-600 font-medium"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="naturebloom-contact.html"
+                  id="nav-contact"
+                  class="text-gray-700 hover:text-green-600 font-medium"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Checkout Hero Section -->
+      <section
+        id="checkout-hero-section"
+        class="bg-gradient-to-r from-emerald-50 to-teal-50 py-16 md:py-24 text-center"
+      >
+        <div class="container mx-auto px-4">
+          <h1
+            id="checkout-headline"
+            class="text-5xl md:text-6xl font-extrabold text-green-800 leading-tight mb-6"
+          >
+            Secure Checkout
+          </h1>
+          <p
+            id="checkout-subheadline"
+            class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto"
+          >
+            Review your selection and complete your purchase with confidence.
+          </p>
+        </div>
+      </section>
+
+      <!-- Checkout Details Section -->
+      <section id="checkout-details-section" class="py-16 bg-white flex-grow">
+        <div
+          class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-8"
+        >
+          <!-- Order Summary (Static Content) -->
+          <div
+            id="order-summary-card"
+            class="lg:col-span-2 bg-white p-8 rounded-xl shadow-lg border border-gray-100 h-full"
+          >
+            <h2
+              id="summary-headline"
+              class="text-3xl font-bold text-gray-800 mb-6"
+            >
+              Your Order
+            </h2>
+            <div id="cart-items-list" class="space-y-6">
+              <!-- Static Product Item -->
+              <div
+                id="checkout-item-display"
+                class="flex items-center justify-between border-b border-gray-200 pb-4"
+              >
+                <div class="flex items-center">
+                  <img
+                    id="checkout-item-image"
+                    src="https://placehold.co/100x100/D1FAE5/065F46?text=Product"
+                    alt="Product Image"
+                    class="w-20 h-20 object-cover rounded-lg mr-4"
+                  />
+                  <div>
+                    <h3
+                      id="checkout-item-name"
+                      class="text-xl font-semibold text-gray-900"
+                    >
+                      Rosehip Facial Oil
+                    </h3>
+                    <p id="checkout-item-desc" class="text-gray-600 text-sm">
+                      Quantity: 1
+                    </p>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span
+                    id="checkout-item-price"
+                    class="text-green-700 font-bold text-xl"
+                    >$28.00</span
+                  >
+                  <!-- Removed quantity buttons as they require JS -->
+                </div>
+              </div>
+              <!-- You can add more static items here if desired for demonstration -->
+            </div>
+
+            <div
+              id="order-totals"
+              class="mt-8 pt-6 border-t border-gray-200 space-y-3 text-lg"
+            >
+              <div class="flex justify-between">
+                <span id="subtotal-label" class="text-gray-700">Subtotal:</span>
+                <span id="subtotal-value" class="font-semibold text-gray-900"
+                  >$28.00</span
+                >
+              </div>
+              <div class="flex justify-between">
+                <span id="shipping-label" class="text-gray-700">Shipping:</span>
+                <span id="shipping-value" class="font-semibold text-gray-900"
+                  >$5.00</span
+                >
+              </div>
+              <div
+                class="flex justify-between text-2xl font-bold text-green-700"
+              >
+                <span id="total-label">Order Total:</span>
+                <span id="total-value">$33.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkout Form / Shipping & Payment Details -->
+          <div
+            id="checkout-form-card"
+            class="bg-white p-8 rounded-xl shadow-lg border border-gray-100"
+          >
+            <h2
+              id="checkout-form-headline"
+              class="text-3xl font-bold text-gray-800 mb-6"
+            >
+              Shipping & Payment Details
+            </h2>
+            <form
+              id="checkout-form"
+              action="confirmation.html"
+              method="GET"
+              class="space-y-6"
+            >
+              <!-- Shipping Address -->
+              <div id="shipping-address-section">
+                <h3
+                  id="shipping-headline"
+                  class="text-xl font-semibold text-gray-800 mb-4"
+                >
+                  Shipping Address
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="firstName"
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      class="form-input"
+                      placeholder="Jane"
+                      required
+                      aria-label="First Name"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="lastName"
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      class="form-input"
+                      placeholder="Doe"
+                      required
+                      aria-label="Last Name"
+                    />
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <label
+                    for="addressLine1"
+                    class="block text-gray-700 text-sm font-semibold mb-2"
+                    >Address Line 1</label
+                  >
+                  <input
+                    type="text"
+                    id="addressLine1"
+                    name="addressLine1"
+                    class="form-input"
+                    placeholder="123 Main St"
+                    required
+                    aria-label="Address Line 1"
+                  />
+                </div>
+                <div class="mt-4">
+                  <label
+                    for="addressLine2"
+                    class="block text-gray-700 text-sm font-semibold mb-2"
+                    >Address Line 2 (Optional)</label
+                  >
+                  <input
+                    type="text"
+                    id="addressLine2"
+                    name="addressLine2"
+                    class="form-input"
+                    placeholder="Apt, Suite, Bldg"
+                    aria-label="Address Line 2"
+                  />
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                  <div>
+                    <label
+                      for="city"
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >City</label
+                    >
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form-input"
+                      placeholder="Anytown"
+                      required
+                      aria-label="City"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="state"
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >State / Province</label
+                    >
+                    <input
+                      type="text"
+                      id="state"
+                      name="state"
+                      class="form-input"
+                      placeholder="CA"
+                      required
+                      aria-label="State or Province"
+                    />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                  <div>
+                    <label
+                      for="zipCode"
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >Zip / Postal Code</label
+                    >
+                    <input
+                      type="text"
+                      id="zipCode"
+                      name="zipCode"
+                      class="form-input"
+                      placeholder="12345"
+                      required
+                      aria-label="Zip Code"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="country"
+                      class="block text-gray-700 text-sm font-semibold mb-2"
+                      >Country</label
+                    >
+                    <input
+                      type="text"
+                      id="country"
+                      name="country"
+                      class="form-input"
+                      placeholder="USA"
+                      required
+                      aria-label="Country"
+                    />
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <label
+                    for="phone"
+                    class="block text-gray-700 text-sm font-semibold mb-2"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="(123) 456-7890"
+                    required
+                    aria-label="Phone Number"
+                  />
+                </div>
+              </div>
+
+              <!-- Payment Information (Simplified, no JS needed) -->
+              <div
+                id="payment-info-section"
+                class="pt-6 border-t border-gray-200 mt-6"
+              >
+                <h3
+                  id="payment-headline"
+                  class="text-xl font-semibold text-gray-800 mb-4"
+                >
+                  Payment Method
+                </h3>
+                <p id="payment-text" class="text-gray-700 mb-4">
+                  Payment will be securely processed via PayPal upon clicking
+                  "Complete Order".
+                </p>
+                <div class="flex items-center justify-center space-x-4">
+                  <img
+                    src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg"
+                    alt="PayPal Accepted"
+                    class="h-8"
+                  />
+                  <!-- You can add other payment logos here if desired -->
+                </div>
+              </div>
+
+              <div id="checkout-submit-container" class="pt-6">
+                <button
+                  type="submit"
+                  id="complete-order-btn"
+                  class="inline-block btn-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg w-full"
+                >
+                  Complete Order
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="main-footer" class="bg-gray-800 text-white py-8 mt-auto">
+        <div class="container mx-auto px-4 text-center">
+          <p id="footer-copyright">
+            &copy; 2025 NatureBloom Organics. All rights reserved.
+          </p>
+          <ul id="footer-links" class="flex justify-center space-x-6 mt-4">
+            <li><a href="#" class="hover:text-green-300">Privacy Policy</a></li>
+            <li>
+              <a href="#" class="hover:text-green-300">Terms of Service</a>
+            </li>
+            <li><a href="#" class="hover:text-green-300">Returns</a></li>
+          </ul>
+          <div
+            id="social-media-links"
+            class="mt-6 flex justify-center space-x-6"
+          >
+            <a
+              href="#"
+              class="text-white hover:text-green-400 transition duration-200"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f text-xl"></i
+            ></a>
+            <a
+              href="#"
+              class="text-white hover:text-green-400 transition duration-200"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram text-xl"></i
+            ></a>
+            <a
+              href="#"
+              class="text-white hover:text-green-400 transition duration-200"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter text-xl"></i
+            ></a>
+            <a
+              href="#"
+              class="text-white hover:text-green-400 transition duration-200"
+              aria-label="Pinterest"
+              ><i class="fab fa-pinterest-p text-xl"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
